@@ -1,0 +1,62 @@
+/* CSS Document */
+img{
+    max-width:100%;
+    height:auto;
+}
+
+/* Navbar */
+.navbar-brand img{
+    height:100%;
+    width:auto;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+ }
+ 
+ /* Login */
+ .remember-me-popup{
+     display:none;
+ }
+ 
+ /* Product Category */
+ .products-list .item{
+     overflow:hidden;
+     margin:10px 0px;
+ }
+ 
+ .products-grid .item{
+     margin:10px 0px;
+ }
+ 
+ /* Cart */
+ select[name="country_id"], select[name="billing[country_id]"], select[name="shipping[country_id]"]{
+     display:block;
+     width:100%;
+     height:34px;
+     padding:6px 12px;
+     font-size:14px;
+     line-height:1.42857143;
+     color:#555;
+     background-color:#fff;
+     background-image:none;
+     border:1px solid #ccc;
+     border-radius:4px;
+     -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+     box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+     -webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+     transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+ }
+
+select[name="country_id"]:focus, select[name="billing[country_id]"]:focus, select[name="shipping[country_id]"]:focus{
+    border-color:#66afe9;
+    outline:0;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+ 
+ /* Footer */
+ .footer-item{
+     margin:10px 0px;
+ }
+
