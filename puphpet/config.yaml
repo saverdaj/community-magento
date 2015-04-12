@@ -5,10 +5,10 @@ vagrantfile-local:
         box_url: puphpet/ubuntu1404-x64
         hostname: ''
         memory: '2048'
-        cpus: '1'
+        cpus: '2'
         chosen_provider: virtualbox
         network:
-            private_network: 192.168.56.124
+            private_network: 192.168.56.198
             forwarded_port:
                 6eOUONMOGK1a:
                     host: '6089'
@@ -21,7 +21,7 @@ vagrantfile-local:
             vmware:
                 numvcpus: 1
             parallels:
-                cpus: 1
+                cpus: 2
         provision:
             puppet:
                 manifests_path: puphpet/puppet
@@ -85,7 +85,7 @@ apache:
         - rewrite
     vhosts:
         Hg3pSC72HOmE:
-            servername: magento.dev
+            servername: local.dev
             serveraliases:
                 - magento.dev
                 - '*.vagrantshare.com'
@@ -224,9 +224,9 @@ mariadb:
         DXBVB3W0Tq0r:
             grant:
                 - ALL
-            name: magento_magento
+            name: local_magento
             host: localhost
-            user: magento
+            user: local
             password: '123'
             sql_file: ''
     version: '5.5'

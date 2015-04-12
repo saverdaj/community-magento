@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Irishtitan_Example>
+            <version>0.1.0</version>
+        </Irishtitan_Example>
+    </modules>
+    <global>
+        <blocks>
+            <irishtitan_example>
+                <class>Irishtitan_Example_Block</class>
+            </irishtitan_example>
+        </blocks>
+        <models>
+            <irishtitan_example>
+                <class>Irishtitan_Example_Model</class>
+            </irishtitan_example>
+        </models>
+        <helpers>
+            <irishtitan_example>
+                <class>Irishtitan_Example_Helper</class>
+            </irishtitan_example>
+        </helpers>
+    </global>
+    <frontend>
+        <routers>
+            <irishtitan_example>
+                <use>standard</use>
+                <args>
+                    <module>Irishtitan_Example</module>
+                    <frontName>example</frontName>
+                </args>
+            </irishtitan_example>
+        </routers>
+    </frontend>
+    <adminhtml></adminhtml>
+</config>
